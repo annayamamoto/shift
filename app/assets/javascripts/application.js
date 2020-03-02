@@ -45,9 +45,9 @@ $(function () {
               dayNamesShort: ['日', '月', '火', '水', '木', '金', '土'],
               //ボタンのレイアウト
               header: {
-                  left: '',
-                  center: 'title',
-                  right: 'today prev,next'
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month agendaWeek agendaDay'
               },
               //終了時刻がないイベントの表示間隔
               defaultTimedEventDuration: '03:00:00',
@@ -61,6 +61,15 @@ $(function () {
                   week: '週',
                   day: '日'
               },
+              allDaySlot: true,
+              // 終日スロットのタイトル
+              allDayText: '終日',
+              // スロットの時間の書式
+              axisFormat: 'H(:mm)',
+              // スロットの分
+              slotMinutes: 15,
+              // 選択する時間間隔
+              snapMinutes: 15,
               // Drag & Drop & Resize
               editable: true,
               //イベントの時間表示を２４時間に
