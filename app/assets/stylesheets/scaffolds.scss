@@ -19,7 +19,17 @@ pre {
   font-size: 11px;
 }
 
-.shift-btn a {
+.fc-sun {
+    color: red;
+    background-color: #fff0f0;
+}
+ 
+.fc-sat {
+    color: blue;
+    background-color: #f0f0ff;
+}
+
+a {
   color: #000;
 
   &:visited {
@@ -29,6 +39,15 @@ pre {
   &:hover {
     color: #000;
     background-color: #b0e0e6;
+  }
+  &.shift-btn {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  &.btn {
+    color: #000;
+    text-decoration: none;
   }
 }
 
